@@ -1,0 +1,12 @@
+{
+	onEnter: function (log, args, state) {
+    log("[+] MessageBoxA");
+    log("¦- hWnd: " + args[0]);
+    log("¦- lpText: " + Memory.readAnsiString(args[1]));
+    log("¦- lpCaption: " + Memory.readAnsiString(args[2]));
+    log("¦- uType: " + args[3] + "\n");
+},
+ 
+onLeave: function (log, retval, state) {
+}
+}

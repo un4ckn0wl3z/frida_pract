@@ -1,0 +1,10 @@
+insatall
+--------------------
+pip install frida-tools
+--------------------
+
+basics
+--------------------
+frida-trace -p 9180 -i RegOpenKeyExW -X KERNELBASE.dll -X KERNEL32.dll
+
+frida-trace -p 7344 -i MessageBoxA
